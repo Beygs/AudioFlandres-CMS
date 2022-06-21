@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "cleaning_products",
   "info": {
-    "singularName": "post",
-    "pluralName": "posts",
-    "displayName": "Actualités",
+    "singularName": "cleaning-product",
+    "pluralName": "cleaning-products",
+    "displayName": "Produits d'entretiens",
     "description": ""
   },
   "options": {
@@ -17,27 +17,26 @@
       "required": true,
       "unique": true
     },
-    "article": {
-      "type": "richtext",
+    "description": {
+      "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text",
-      "maxLength": 240,
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "article": {
+      "type": "richtext",
       "required": true
     },
     "slug": {
       "type": "uid",
       "targetField": "title",
       "required": true
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
     }
   }
 }

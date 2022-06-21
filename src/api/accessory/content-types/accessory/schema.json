@@ -4,7 +4,8 @@
   "info": {
     "singularName": "accessory",
     "pluralName": "accessories",
-    "displayName": "Accessory"
+    "displayName": "Accessoires",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,12 +25,12 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "slug": {
       "type": "uid",

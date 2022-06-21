@@ -29,3 +29,9 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           server-dir: /api.audioflandres.fr/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.cache/**
+            **/.tmp/**

@@ -22,12 +22,12 @@
       "required": true
     },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     },
     "article": {
       "type": "richtext",
@@ -35,6 +35,7 @@
     },
     "slug": {
       "type": "uid",
+      "targetField": "name",
       "required": true
     }
   }
